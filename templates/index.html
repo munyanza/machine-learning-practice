@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flask + Matplotlib Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f0f8ff;
+    }
+    .card {
+      border-radius: 12px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .navbar {
+      background-color: #0077b6;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">📊 Matplotlib Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container text-center mt-4">
+    <h2 class="mb-4">Choose a Chart</h2>
+    <div class="row">
+      <!-- Histogram -->
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Histogram</h5>
+          <img src="/hist" class="img-fluid" alt="Histogram">
+        </div>
+      </div>
+
+      <!-- Line -->
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Line Plot</h5>
+          <img src="/line" class="img-fluid" alt="Line Plot">
+        </div>
+      </div>
+
+      <!-- Bar -->
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Bar Chart</h5>
+          <img src="/bar" class="img-fluid" alt="Bar Chart">
+        </div>
+      </div>
+
+      <!-- Scatter -->
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Scatter Plot</h5>
+          <img src="/scatter" class="img-fluid" alt="Scatter Plot">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
